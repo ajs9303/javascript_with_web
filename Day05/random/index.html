@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <h1>랜덤 숫자 맞추기</h1>
+      <h2 id="updown">새로운 게임 시작</h2>
+      <div>
+        남은 도전 기회
+        <h3 id="chance">5</h3>
+      </div>
+
+      <input
+        id="input"
+        type="number"
+        min="1"
+        max="100"
+        placeholder="1~100까지 숫자를 입력하세요"
+      />
+      <button id="start" class="blue">GO</button>
+      <button id="reset" class="black">RESET</button>
+    </div>
+  </body>
+</html>

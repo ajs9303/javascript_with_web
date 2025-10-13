@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/share.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <header id="header" class="transition-colors">
+      <section id="header_section">
+        <a href="/"><img src="image/logo.svg" alt="" /></a>
+        <button class="pointer"><img src="image/menu.svg" alt="" /></button>
+      </section>
+    </header>
+
+    <section id="hero">
+      <div>
+        <video autoplay loop muted>
+          <source src="https://www.socar.kr/video/main_video.mp4" />
+        </video>
+        <section id="title">
+          <h1 class="Header1">Lifetime Mobility</h1>
+          <p class="Header2">라이프타임 모빌리티 플랫폼, 쏘카</p>
+        </section>
+      </div>
+      <section id="app">
+        <div>
+          <a href="/">
+            <img src="image/download.svg" alt="" />
+            <span>쏘카 앱 다운로드</span>
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section id="share">
+      <div class="container">
+        <h2 class="Title1">
+          차가 필요한 모든 순간<br /><span class="Title2">쏘카 카셰어링</span>
+        </h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture><img src="image/쏘카 1.jpg" alt="" /></picture>
+            </div>
+            <div class="swiper-slide">
+              <picture><img src="image/쏘카 2.jpg" alt="" /></picture>
+            </div>
+            <div class="swiper-slide">
+              <picture><img src="image/쏘카 3.jpg" alt="" /></picture>
+            </div>
+            <div class="swiper-slide">
+              <picture><img src="image/쏘카 4.jpg" alt="" /></picture>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service">
+      <div class="container">
+        <h2 class="Title1">
+          끊임없이 확장되는 이동 경험<br />
+          <span class="Title2">쏘카의 다양한 서비스</span>
+        </h2>
+        <div class="card">
+          <article></article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

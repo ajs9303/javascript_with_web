@@ -1,0 +1,16 @@
+@import url(root.css);
+
+#share {
+  width: 100%;
+  background-color: black;
+  padding: 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  #share {
+    padding: 6rem 3rem;
+  }
+}

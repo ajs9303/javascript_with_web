@@ -20,6 +20,3 @@ const ob = new IntersectionObserver((targets, me) => {
 
 ob.observe(lunch);
 ob.observe(dinner);
-
-const b = ob.takeRecords();
-console.log(b);
