@@ -6,7 +6,8 @@ const chance = document.querySelector("#chance");
 const answer = Math.floor(Math.random() * 100) + 1;
 console.log(`정답: ${answer}`);
 
-const gameover = (isClear) => {
+// 게임 종료 함수
+const endGame = (isWin) => {
   bStart.disabled = true;
   nInput.disabled = true;
   chance.innerText = isClear
@@ -14,17 +15,18 @@ const gameover = (isClear) => {
     : `실패❕ 정답은 ${answer}입니다. RESET을 눌러 게임을 시작하세요!`;
 };
 
+// 클릭 이벤트
 bStart.addEventListener("click", () => {
   const { value } = nInput;
   const chanceCnt = +chance.innerText;
   const hasChance = chanceCnt != 0;
 
   if (answer == value) {
-    gameover(true);
+    endGame(true);
   } else {
     chance.innerText = chanceCnt - 1;
     updown.innerText = answer > value ? "UP🔼" : "DOWN🔽";
-    !hasChance && gameover(false);
+    !hasChance && endGame(false);
   }
 });
 
