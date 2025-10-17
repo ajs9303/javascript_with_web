@@ -1,0 +1,28 @@
+#main {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+  gap: 100px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span {
+  font-size: 30px;
+  color: white;
+}
+
+button {
+  font-size: 30px;
+  background-color: white;
+  border: none;
+  margin: 10px;
+}

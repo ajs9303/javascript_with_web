@@ -1,0 +1,17 @@
+.runner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  transition: left linear; /* left 변화 시 부드럽게 이동 */
+}
+
+#runner1 {
+  top: 20px;
+}
+#runner2 {
+  top: 80px;
+}
+#runner3 {
+  top: 140px;
+}
